@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130213195537) do
+ActiveRecord::Schema.define(:version => 20130213201418) do
 
   create_table "activities", :force => true do |t|
     t.string   "name"
@@ -61,6 +61,20 @@ ActiveRecord::Schema.define(:version => 20130213195537) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "family_avatars", :force => true do |t|
+    t.integer  "family_id"
+    t.integer  "avatar_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "family_awards", :force => true do |t|
+    t.integer  "family_id"
+    t.integer  "award_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "genders", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
@@ -85,6 +99,20 @@ ActiveRecord::Schema.define(:version => 20130213195537) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "post_id"
+  end
+
+  create_table "person_avatars", :force => true do |t|
+    t.integer  "person_id"
+    t.integer  "avatar_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "person_awards", :force => true do |t|
+    t.integer  "person_id"
+    t.integer  "award_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "posts", :force => true do |t|
