@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  activity_id: 1
+  cost_id: 1
+  location_id: 1
+  photo_url: MyString
+
+two:
+  name: MyString
+  activity_id: 1
+  cost_id: 1
+  location_id: 1
+  photo_url: MyString

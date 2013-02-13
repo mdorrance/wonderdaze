@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Good:</b>
+  <%= @post.good %>
+</p>
+
+<p>
+  <b>Bad:</b>
+  <%= @post.bad %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

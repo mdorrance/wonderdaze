@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Role:</b>
+  <%= @person.role_id %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @person.gender_id %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @person.age %>
+</p>
+
+<p>
+  <b>Trail name:</b>
+  <%= @person.trail_name %>
+</p>
+
+<p>
+  <b>Family:</b>
+  <%= @person.family_id %>
+</p>
+
+<p>
+  <b>Avatar:</b>
+  <%= @person.avatar_id %>
+</p>
+
+<p>
+  <b>Award:</b>
+  <%= @person.award_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
