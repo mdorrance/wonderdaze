@@ -1,8 +1,8 @@
 class Activity < ActiveRecord::Base
-  attr_accessible :name, :type
+  attr_accessible :name, :type, :type_id, :location_id
 
-  belongs_to :Adventure
-  has_many :Adventures
-  belongs_to :Location
+  belongs_to :type
+  has_many :adventures
+  belongs_to :location
 
 end
